@@ -124,3 +124,87 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: RobotoSlabRegular;
+  src: url(../fonts/Roboto%20Slab%20Regular.ttf);
+}
+@font-face {
+  font-family: RobotoSlabBold;
+  src: url(../fonts/Roboto%20Slab%20Bold.ttf);
+}
+header {
+  background: #edebe6;
+  position: fixed;
+  width: 100%;
+}
+header .logo h1 {
+  color: #664422;
+  font-weight: bold;
+  margin: 0;
+  line-height: 80px;
+}
+header .search #search {
+  float: right;
+}
+header .search a.svg-cursor {
+  float: right;
+  margin-top: 30px;
+}
+header .search :before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+menu {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+menu .left-menu ul li {
+  display: inline-block;
+  border-bottom: 1px solid #664422;
+  width: 30%;
+  margin-right: 15px;
+}
+menu .left-menu ul li a {
+  color: #664422;
+}
+menu .right-menu .menu-elements {
+  float: right;
+}
+menu .right-menu .menu-elements #grid {
+  margin-right: 25px;
+}
+menu .right-menu .menu-elements a.svg-cursor-grid:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+menu .right-menu .menu-elements a.svg-cursor-map:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  right: 15px;
+  top: 0px;
+}
+.main img {
+  width: 100%;
+}
+.main .main-row {
+  margin: 15px 0;
+  padding: 0;
+}
+body {
+  font-family: RobotoSlabRegular !important;
+}

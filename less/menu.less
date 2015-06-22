@@ -1,0 +1,45 @@
+menu{
+  padding-top: 30px;
+  margin-bottom: 30px;
+  .left-menu{
+    ul{
+      li{
+        display: inline-block;
+        border-bottom: 1px solid #664422;
+        width: 30%;
+        margin-right: 15px;
+        a{
+          color: #664422;
+        }
+      }
+    }
+  }
+  .right-menu{
+    .menu-elements{
+      float: right;
+      #grid{
+        margin-right: 25px;
+      }
+      a.svg-cursor-grid:before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+      }
+      a.svg-cursor-map:before{
+        content: "";
+        display: block;
+        position: absolute;
+        background-color: transparent;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        right: 15px;
+        top: 0px;
+      }
+    }
+  }
+}
