@@ -239,7 +239,7 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
 .main .main-foto {
   position: relative;
   padding: 0;
-  width: 48%;
+  width: 46.7%;
   margin-left: 15px;
   margin-right: 20px;
 }
@@ -251,8 +251,8 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
 }
 .main .two-foto-row .center-foto-row {
   padding: 0;
-  margin-right: 30px;
-  width: 48%;
+  margin-right: 20px;
+  width: 47%;
 }
 .main .right-foto-row {
   padding: 0;
