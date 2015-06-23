@@ -164,16 +164,31 @@ menu {
   padding-top: 30px;
   margin-bottom: 30px;
 }
-menu .left-menu ul li {
+menu .left-menu li {
   display: inline-block;
   border-bottom: 1px solid #664422;
   width: 30%;
   margin-right: 15px;
 }
-menu .left-menu ul li a {
+menu .left-menu li a {
   color: #664422;
   text-decoration: none;
   cursor: pointer;
+}
+menu .left-menu .dropdown-menu {
+  border: 1px solid #664422;
+  top: 57%;
+  left: -6px;
+  width: 33%;
+}
+menu .left-menu .down-menu li {
+  border: none;
+  display: block;
+  width: auto;
+  margin-right: 0;
+}
+menu .left-menu .down-menu li a {
+  line-height: 2.5;
 }
 menu .right-menu .menu-elements {
   float: right;
@@ -218,20 +233,23 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3f0f9ff', endColorstr='#b3361504', GradientType=0);
 }
 .main .main-row {
-  margin: 15px 0;
+  margin: 20px 0;
   padding: 0;
 }
 .main .main-foto {
   position: relative;
   padding: 0;
   width: 48%;
-  margin-left: 16px;
+  margin-left: 15px;
   margin-right: 20px;
 }
 .main .main-foto img {
   max-height: 307px;
 }
-.main .center-foto-row {
+.main .two-foto-row {
+  padding: 0;
+}
+.main .two-foto-row .center-foto-row {
   padding: 0;
   margin-right: 30px;
   width: 48%;
@@ -272,6 +290,138 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
 .main .stars .rating span:hover:before {
   content: "\2606";
   position: absolute;
+}
+.main .row-main {
+  padding: 0;
+  margin: 0 0 20px 15px;
+}
+.main .row-main .first-foto {
+  padding: 0;
+  width: 22.9%;
+  margin-right: 20px;
+}
+.main .row-main .second-foto {
+  padding: 0;
+  width: 22.7%;
+}
+.main .row-main .third-foto {
+  padding: 0;
+  width: 23.5%;
+  margin: 0 20px;
+}
+.main .row-main .four-foto {
+  padding: 0;
+  width: 24%;
+}
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #664422;
+}
+footer .footer-box {
+  padding-top: 30px;
+}
+footer .footer-box .copyright {
+  padding: 0;
+  margin-left: 15px;
+  width: 24%;
+  color: #664422;
+}
+footer .footer-box .instagram {
+  padding-left: 7px;
+  width: 24%;
+}
+footer .footer-box .facebook {
+  padding-left: 7px;
+  width: 24%;
+}
+footer .footer-box .studio {
+  padding-left: 20px;
+  width: 24%;
+  color: #664422;
+}
+footer .footer-box a {
+  text-decoration: none;
+  color: #664422;
+}
+@media screen and (max-width: 1401px) {
+  /*main*/
+  .main img {
+    min-height: 320px;
+  }
+  .main .main-foto {
+    width: 47%;
+  }
+  .main .two-foto-row .center-foto-row {
+    width: 47%;
+    margin-right: 20px;
+  }
+  .main .address {
+    left: 12px;
+  }
+  .main .address h2 {
+    font-size: 36px;
+  }
+  .main .stars {
+    bottom: 15px;
+    padding-top: 15px;
+  }
+  .main .stars .time {
+    margin-left: 15px;
+  }
+  .main .stars .rating {
+    margin-right: 30px;
+  }
+  /*--------------------------*/
+}
+@media screen and (max-width: 1215px) {
+  /*main*/
+  .main img {
+    min-height: 300px;
+  }
+  .main .main-foto {
+    width: 46%;
+  }
+  .main .main-foto img {
+    max-height: 300px;
+  }
+  .main .two-foto-row .center-foto-row {
+    width: 47%;
+    margin-right: 20px;
+  }
+  .main .address {
+    left: 12px;
+  }
+  .main .address h2 {
+    font-size: 36px;
+  }
+  .main .stars {
+    bottom: 15px;
+    padding-top: 15px;
+  }
+  .main .stars .time {
+    margin-left: 15px;
+  }
+  .main .stars .rating {
+    margin-right: 30px;
+  }
+  .main .row-main .first-foto {
+    width: 22%;
+  }
+  .main .row-main .second-foto {
+    width: 22%;
+  }
+  .main .row-main .third-foto {
+    width: 23.5%;
+  }
+  .main .row-main .four-foto {
+    width: 24%;
+  }
+  /*--------------------------*/
+  /*menu*/
+  menu .left-menu ul li {
+    width: 28%;
+  }
+  /*-------------------------------*/
 }
 body {
   font-family: RobotoSlabRegular !important;

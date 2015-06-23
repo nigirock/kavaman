@@ -2,7 +2,6 @@ menu{
   padding-top: 30px;
   margin-bottom: 30px;
   .left-menu{
-    ul{
       li{
         display: inline-block;
         border-bottom: 1px solid #664422;
@@ -14,6 +13,22 @@ menu{
           cursor: pointer;
         }
       }
+    .dropdown-menu{
+      border: 1px solid #664422;
+      top: 57%;
+      left: -6px;
+      width: 33%;
+    }
+    .down-menu{
+        li{
+          border: none;
+          display: block;
+          width: auto;
+          margin-right: 0;
+          a{
+            line-height: 2.5;
+          }
+        }
     }
   }
   .right-menu{
@@ -44,4 +59,5 @@ menu{
       }
     }
   }
+
 }
