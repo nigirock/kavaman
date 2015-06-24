@@ -198,6 +198,7 @@ menu .left-menu .down-menu li a {
   line-height: 2.5;
 }
 menu .right-menu .menu-elements {
+  padding-right: 40px;
   float: right;
 }
 menu .right-menu .menu-elements #grid {
@@ -494,54 +495,66 @@ footer .footer-box a {
   }
   /*-------------------------------*/
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /*main*/
   .main img {
-    min-height: 300px;
+    min-height: 260px;
   }
   .main .main-foto {
-    width: 42%;
-    margin: 0 10px;
+    width: 100%;
+    margin: 0;
   }
   .main .main-foto img {
-    max-height: 300px;
+    max-height: 260px;
+  }
+  .main .two-foto-row {
+    margin: 0;
   }
   .main .two-foto-row .center-foto-row {
-    width: 45%;
-    margin-right: 10px;
+    width: 100%;
+    margin: 0;
+  }
+  .main .two-foto-row .right-foto-row {
+    width: 100%;
   }
   .main .address {
     left: 12px;
   }
+  .main .address address {
+    font-size: 16px;
+  }
   .main .address h2 {
-    font-size: 36px;
+    font-size: 21px;
   }
   .main .stars {
     bottom: 15px;
     padding-top: 15px;
   }
   .main .stars .time {
-    margin-left: 15px;
+    margin-left: 10px;
+    font-size: 14px;
   }
   .main .stars .rating {
-    margin-right: 30px;
+    margin: 5px 5px 0;
+    font-size: 16px;
   }
   .main .row-main .first-foto {
-    width: 22%;
+    width: 100%;
   }
   .main .row-main .second-foto {
-    width: 22%;
+    width: 100%;
   }
   .main .row-main .third-foto {
-    width: 23.5%;
+    width: 100%;
+    margin: 0;
   }
   .main .row-main .four-foto {
-    width: 24%;
+    width: 100%;
   }
   /*--------------------------*/
   /*menu*/
   menu .left-menu ul li {
-    width: 28%;
+    width: 100%;
   }
   /*-------------------------------*/
 }
