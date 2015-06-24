@@ -11,7 +11,7 @@
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
 </head>
 <body>
-<header class="container-fluid col-md-12">
+<header class="container-fluid col-md-12 col-sm-12">
     <div class="logo col-md-6 col-sm-6 col-xs-6">
         <h1>каваман</h1>
     </div>
@@ -23,11 +23,11 @@
 </header>
 
 <menu class="container-fluid col-md-12">
-    <div class="left-menu col-md-6 col-sm-6 col-xs-6 dropdown">
+    <div class="left-menu col-md-6 col-sm-10 col-xs-6">
         <ul>
-            <li><a href="#" id="dropdownMenu1" data-toggle="dropdown" class="dropdown-toggle">Эспрэса</a>
+            <li class="dropdown"><a href="#" id="dropdownMenu1" data-toggle="dropdown" class="dropdown-toggle">Эспрэса</a>
                 <ul class="dropdown-menu down-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Эспрэса</a></li>
+                    <li><a href="#">Эспрэса</a><object name="search" type="image/svg+xml" data="svg/chckbx.svg" width="20px" height="20px"></object></li>
                     <li><a href="#">Рыстрэта</a></li>
                     <li><a href="#">Лунга</a></li>
                     <li><a href="#">Амерыкана</a></li>
@@ -42,10 +42,16 @@
                 </ul>
             </li>
             <li><a>На вынас</a></li>
-            <li><a>У Мiнску</a></li>
+            <li class="dropdown"><a href="#" id="dropdownMenuCity" data-toggle="dropdown" class="dropdown-toggle">У Мiнску</a>
+                <ul class="dropdown-menu down-menu-city down-menu" aria-labelledby="dropdownMenuCity">
+                    <li><a href="#">Мiнск</a><object name="search" type="image/svg+xml" data="svg/chckbx.svg" width="20px" height="20px"></object></li>
+                    <li><a href="#">Гомель</a></li>
+                    <li><a href="#">Магiлёу</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
-    <div class="right-menu col-md-6 col-sm-6 col-xs-6">
+    <div class="right-menu col-md-6 col-sm-2 col-xs-6">
         <div class="menu-elements">
             <a href="#" class="svg-cursor-grid">
                 <object id="grid" name="grid" type="image/svg+xml" data="svg/grid.svg" width="20px" height="20px"></object>
@@ -59,7 +65,7 @@
 
 <section class="main container-fluid">
     <div class="col-lg-12 col-md-12 col-sm-12 main-row">
-        <div class="col-lg-6 col-md-6 col-sm-12 main-foto img-gradient">
+        <div class="col-lg-6 col-md-6 col-sm-6 main-foto img-gradient">
                 <img src="images/zerno.jpg" alt="zerno" >
              <div class="address">
                 <h2>Зерно</h2>
@@ -70,7 +76,7 @@
                  <span class="rating"><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span></span>
              </div>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 two-foto-row">
+        <div class="col-lg-6 col-md-6 col-sm-6 two-foto-row row">
             <div class="col-lg-6 col-md-6 col-sm-6 center-foto-row img-gradient">
                 <img src="images/guru.jpg" alt="guru">
                 <div class="address">
@@ -144,7 +150,7 @@
         </div>
                                                      <!--======================3 row=======================-->
         <div class="col-lg-12 col-md-12 col-sm-12 row-main">
-            <div class="col-lg-3 col-md-3 first-foto img-gradient">
+            <div class="col-lg-3 col-md-3 col-sm-6 first-foto img-gradient">
                 <img src="images/guru.jpg" alt="guru">
                 <div class="address">
                     <h2>Guru Coffee Club</h2>
@@ -155,7 +161,7 @@
                     <span class="rating"><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span></span>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 second-foto img-gradient">
+            <div class="col-lg-3 col-md-3 col-sm-6 second-foto img-gradient">
                 <img src="images/coffeemall.jpg" alt="coffeemall">
                 <div class="address">
                     <h2>CoffeeMall</h2>
@@ -166,7 +172,7 @@
                     <span class="rating"><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span></span>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 third-foto img-gradient">
+            <div class="col-lg-3 col-md-3 col-sm-6 third-foto img-gradient">
                 <img src="images/ps.jpg" alt="ps">
                 <div class="address">
                     <h2>Пряности<br>&Сладости</h2>
@@ -177,7 +183,7 @@
                     <span class="rating"><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9733</span><span>&#9734</span></span>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 four-foto img-gradient">
+            <div class="col-lg-3 col-md-3 col-sm-6 four-foto img-gradient">
                 <img src="images/wakeup.jpg" alt="wakeup">
                 <div class="address">
                     <h2>Wake Up Coffee</h2>
