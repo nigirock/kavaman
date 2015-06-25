@@ -145,6 +145,7 @@ header .logo h1 {
   margin: 0;
   line-height: 80px;
   font-family: RobotoSlabBold;
+  margin-left: 15px;
 }
 header .search #search {
   float: right;
@@ -166,13 +167,16 @@ menu {
   padding-top: 110px;
   margin-bottom: 30px;
 }
-menu .left-menu li {
+menu .left-menu ul {
+  margin-left: 15px;
+}
+menu .left-menu ul li {
   display: inline-block;
   border-bottom: 1px solid #664422;
   width: 30%;
   margin-right: 15px;
 }
-menu .left-menu li a {
+menu .left-menu ul li a {
   color: #664422;
   text-decoration: none;
   cursor: pointer;
@@ -184,8 +188,11 @@ menu .left-menu .dropdown-menu {
   left: -20px;
   width: 120%;
 }
+menu .left-menu .dropdown-menu li a {
+  padding-right: 75px;
+}
 menu .left-menu .down-menu-city {
-  left: -8px;
+  left: -20px;
   width: 120%;
 }
 menu .left-menu .down-menu li {
@@ -198,7 +205,6 @@ menu .left-menu .down-menu li a {
   line-height: 2.5;
 }
 menu .right-menu .menu-elements {
-  padding-right: 40px;
   float: right;
 }
 menu .right-menu .menu-elements #grid {
@@ -337,11 +343,9 @@ footer .footer-box .copyright {
 }
 footer .footer-box .instagram {
   padding-left: 7px;
-  width: 24%;
 }
 footer .footer-box .facebook {
   padding-left: 7px;
-  width: 24%;
 }
 footer .footer-box .studio {
   padding-left: 20px;
@@ -433,16 +437,30 @@ footer .footer-box a {
   /*-------------------------------*/
 }
 @media screen and (max-width: 991px) {
+  /*menu*/
+  menu {
+    margin: 0;
+  }
+  menu .left-menu {
+    display: block;
+  }
+  menu .right-menu {
+    display: block;
+  }
+  /*-------------------------------*/
   /*main*/
   .main img {
     min-height: 260px;
   }
-  .main .main-foto {
-    width: 46.6%;
-    margin-left: 15px;
-    margin-right: 0px;
+  .main .main-row {
+    margin-left: 1%;
   }
-  .main .main-foto img {
+  .main .main-row .main-foto {
+    width: 46.3%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main .main-row .main-foto img {
     max-height: 260px;
   }
   .main .two-foto-row {
@@ -451,9 +469,6 @@ footer .footer-box a {
   .main .two-foto-row .center-foto-row {
     width: 46.6%;
     margin-right: 20px;
-  }
-  .main .two-foto-row .right-foto-row {
-    width: 46.6%;
   }
   .main .address {
     left: 12px;
@@ -494,25 +509,47 @@ footer .footer-box a {
     width: 28%;
   }
   /*-------------------------------*/
+  /*-----------footer---------*/
+  footer .footer-box .studio {
+    width: 27%;
+    padding-left: 30px;
+  }
+  /*---------------------*/
 }
 @media screen and (max-width: 767px) {
+  /*menu*/
+  menu {
+    margin: 0;
+  }
+  menu .left-menu {
+    display: none;
+  }
+  menu .right-menu {
+    display: none;
+  }
+  /*-------------------------------*/
   /*main*/
   .main img {
-    min-height: 260px;
+    max-height: 350px;
   }
-  .main .main-foto {
+  .main .main-row {
+    margin-left: 0;
+  }
+  .main .main-row .main-foto {
     width: 100%;
-    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
   }
-  .main .main-foto img {
-    max-height: 260px;
+  .main .main-row .main-foto img {
+    max-height: 350px;
   }
   .main .two-foto-row {
-    margin: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
   }
   .main .two-foto-row .center-foto-row {
     width: 100%;
-    margin: 0;
+    margin-bottom: 15px;
   }
   .main .two-foto-row .right-foto-row {
     width: 100%;
@@ -524,7 +561,7 @@ footer .footer-box a {
     font-size: 16px;
   }
   .main .address h2 {
-    font-size: 21px;
+    font-size: 28px;
   }
   .main .stars {
     bottom: 15px;
@@ -532,7 +569,7 @@ footer .footer-box a {
   }
   .main .stars .time {
     margin-left: 10px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .main .stars .rating {
     margin: 5px 5px 0;
@@ -540,24 +577,187 @@ footer .footer-box a {
   }
   .main .row-main .first-foto {
     width: 100%;
+    margin-bottom: 15px;
   }
   .main .row-main .second-foto {
     width: 100%;
+    margin-bottom: 15px;
   }
   .main .row-main .third-foto {
     width: 100%;
-    margin: 0;
+    margin: 0 0 15px 0;
   }
   .main .row-main .four-foto {
     width: 100%;
   }
   /*--------------------------*/
-  /*menu*/
-  menu .left-menu ul li {
+  /*-----------footer---------*/
+  footer {
+    border: none;
+    margin-top: 15px;
+  }
+  footer .footer-box {
+    padding-top: 10px;
+  }
+  footer .footer-box .copyright {
+    display: none;
+  }
+  footer .footer-box .inst-face-box {
+    text-align: center;
+    border-bottom: 1px solid #664422;
+    margin-left: 0;
+    padding-bottom: 40px;
+  }
+  footer .footer-box .inst-face-box .instagram {
+    padding-left: 0;
+    width: 50%;
+  }
+  footer .footer-box .inst-face-box .facebook {
+    padding-left: 0;
+    width: 50%;
+  }
+  footer .footer-box .studio {
+    text-align: center;
+    padding: 15px 0;
     width: 100%;
   }
-  /*-------------------------------*/
+  footer .footer-box a {
+    text-decoration: none;
+    color: #664422;
+  }
+  /*---------------------*/
 }
+/*
+@media screen and (max-width: 481px){
+  */
+/*menu*/
+/*
+
+  menu {
+    .left-menu {
+      ul {
+        li {
+          width: 100%;
+          a{
+
+          }
+        }
+      }
+    }
+  }
+  */
+/*-------------------------------*/
+/*
+
+  */
+/*main*/
+/*
+
+  .main {
+    img {
+      min-height: 300px;
+    }
+    .main-row{
+      margin-left: 0;
+      .main-foto {
+        width: 100%;
+        margin-bottom: 15px;
+        img{
+          max-height: 260px;
+        }
+      }
+    }
+    .two-foto-row {
+      margin-bottom: 15px;
+      margin-left: 0;
+      .center-foto-row {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .right-foto-row{
+        width: 100%;
+      }
+    }
+    .address {
+      left: 12px;
+      address{
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 21px;
+      }
+    }
+    .stars{
+      bottom: 15px;
+      padding-top: 15px;
+      .time{
+        margin-left: 10px;
+        font-size: 14px;
+      }
+      .rating{
+        margin: 5px 5px 0;
+        font-size: 16px;
+      }
+    }
+    .row-main{
+      .first-foto {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .second-foto{
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      .third-foto{
+        width: 100%;
+        margin: 0 0 15px 0;
+      }
+      .four-foto{
+        width: 100%;
+      }
+    }
+  }
+  */
+/*--------------------------*/
+/*
+
+  */
+/*-----------footer---------*/
+/*
+
+  footer{
+    border: none;
+    margin-top: 15px;
+    .footer-box{
+      .copyright{
+        display: none;
+      }
+      .instagram{
+        padding-left: 7px;
+        width: 50%;
+      }
+      .facebook{
+        padding-left: 7px;
+        width: 50%;
+      }
+      .studio{
+        padding-left: 20px;
+        width: 24%;
+        color: #664422;
+      }
+      a{
+        text-decoration: none;
+        color: #664422;
+      }
+    }
+
+  }
+  */
+/*---------------------*/
+/*
+
+}
+*/
 body {
   font-family: RobotoSlabRegular !important;
 }
