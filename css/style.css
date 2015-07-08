@@ -233,10 +233,12 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
 .main img {
   width: 100%;
   min-height: 400px;
-  mix-blend-mode: multiply;
   border-radius: 5px;
 }
 .main .img-gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
   background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YwZjlmZiIgc3RvcC1vcGFjaXR5PSIwLjciLz4KICAgIDxzdG9wIG9mZnNldD0iNDclIiBzdG9wLWNvbG9yPSIjN2Y2YTVmIiBzdG9wLW9wYWNpdHk9IjAuNyIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzYxNTA0IiBzdG9wLW9wYWNpdHk9IjAuNyIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
   background: -moz-linear-gradient(top, rgba(240, 249, 255, 0.7) 0%, rgba(127, 106, 95, 0.7) 47%, rgba(54, 21, 4, 0.7) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(240, 249, 255, 0.7)), color-stop(47%, rgba(127, 106, 95, 0.7)), color-stop(100%, rgba(54, 21, 4, 0.7)));
@@ -247,31 +249,13 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3f0f9ff', endColorstr='#b3361504', GradientType=0);
 }
 .main .main-row {
-  margin: 20px 0;
-  padding: 0;
+  margin-bottom: 25px;
 }
 .main .main-foto {
   position: relative;
-  padding: 0;
-  width: 46.7%;
-  margin-left: 15px;
-  margin-right: 20px;
 }
 .main .main-foto img {
   max-height: 307px;
-}
-.main .two-foto-row {
-  padding: 0;
-  margin-left: 0;
-}
-.main .two-foto-row .center-foto-row {
-  padding: 0;
-  margin-right: 20px;
-  width: 47%;
-}
-.main .right-foto-row {
-  padding: 0;
-  width: 48%;
 }
 .main .address {
   color: #fff;
@@ -306,28 +290,6 @@ menu .right-menu .menu-elements a.svg-cursor-map:before {
   content: "\2606";
   position: absolute;
 }
-.main .row-main {
-  padding: 0;
-  margin: 0 0 20px 15px;
-}
-.main .row-main .first-foto {
-  padding: 0;
-  width: 22.9%;
-  margin-right: 20px;
-}
-.main .row-main .second-foto {
-  padding: 0;
-  width: 22.7%;
-}
-.main .row-main .third-foto {
-  padding: 0;
-  width: 23.5%;
-  margin: 0 20px;
-}
-.main .row-main .four-foto {
-  padding: 0;
-  width: 24%;
-}
 footer {
   margin-top: 40px;
   border-top: 1px solid #664422;
@@ -361,18 +323,11 @@ footer .footer-box a {
   .main img {
     min-height: 320px;
   }
-  .main .main-foto {
-    width: 47%;
-  }
-  .main .two-foto-row .center-foto-row {
-    width: 47%;
-    margin-right: 20px;
-  }
   .main .address {
-    left: 12px;
+    left: 30px;
   }
   .main .address h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
   .main .stars {
     bottom: 15px;
@@ -382,30 +337,34 @@ footer .footer-box a {
     margin-left: 15px;
   }
   .main .stars .rating {
-    margin-right: 30px;
+    margin-right: 40px;
   }
   /*--------------------------*/
+  /*-----------footer---------*/
+  footer .footer-box .inst-face-box .facebook {
+    padding-left: 25px;
+  }
+  footer .footer-box .studio {
+    padding-left: 40px;
+  }
+  /*---------------------*/
 }
 @media screen and (max-width: 1215px) {
   /*main*/
   .main img {
     min-height: 300px;
   }
-  .main .main-foto {
-    width: 46%;
-  }
   .main .main-foto img {
     max-height: 300px;
   }
-  .main .two-foto-row .center-foto-row {
-    width: 47%;
-    margin-right: 20px;
-  }
   .main .address {
-    left: 12px;
+    left: 30px;
   }
   .main .address h2 {
-    font-size: 36px;
+    font-size: 30px;
+  }
+  .main .address address {
+    font-size: 14px;
   }
   .main .stars {
     bottom: 15px;
@@ -415,19 +374,7 @@ footer .footer-box a {
     margin-left: 15px;
   }
   .main .stars .rating {
-    margin-right: 30px;
-  }
-  .main .row-main .first-foto {
-    width: 22%;
-  }
-  .main .row-main .second-foto {
-    width: 22%;
-  }
-  .main .row-main .third-foto {
-    width: 23.5%;
-  }
-  .main .row-main .four-foto {
-    width: 24%;
+    margin-right: 35px;
   }
   /*--------------------------*/
   /*menu*/
@@ -450,69 +397,46 @@ footer .footer-box a {
   /*-------------------------------*/
   /*main*/
   .main img {
-    min-height: 260px;
+    min-height: 230px;
+    max-height: 450px;
+    margin-bottom: 15px;
   }
   .main .main-row {
-    margin-left: 1%;
-  }
-  .main .main-row .main-foto {
-    width: 46.3%;
-    margin-left: 0;
-    margin-right: 0;
+    margin-bottom: 0;
   }
   .main .main-row .main-foto img {
-    max-height: 260px;
-  }
-  .main .two-foto-row {
-    margin-left: 20px;
-  }
-  .main .two-foto-row .center-foto-row {
-    width: 46.6%;
-    margin-right: 20px;
-  }
-  .main .address {
-    left: 12px;
+    max-height: 450px;
   }
   .main .address address {
-    font-size: 16px;
+    font-size: 22px;
   }
   .main .address h2 {
-    font-size: 21px;
+    font-size: 36px;
   }
   .main .stars {
-    bottom: 15px;
+    bottom: 30px;
     padding-top: 15px;
   }
   .main .stars .time {
-    margin-left: 10px;
-    font-size: 14px;
+    margin-left: 15px;
+    font-size: 18px;
   }
   .main .stars .rating {
-    margin: 5px 5px 0;
-    font-size: 16px;
-  }
-  .main .row-main .first-foto {
-    width: 22%;
-  }
-  .main .row-main .second-foto {
-    width: 22%;
-  }
-  .main .row-main .third-foto {
-    width: 23.5%;
-  }
-  .main .row-main .four-foto {
-    width: 24%;
+    margin: 0 50px 0;
+    font-size: 18px;
   }
   /*--------------------------*/
   /*menu*/
+  menu {
+    margin-bottom: 15px;
+  }
   menu .left-menu ul li {
     width: 28%;
   }
   /*-------------------------------*/
   /*-----------footer---------*/
   footer .footer-box .studio {
-    width: 27%;
-    padding-left: 30px;
+    padding-left: 40px;
   }
   /*---------------------*/
 }
@@ -537,25 +461,10 @@ footer .footer-box a {
   }
   .main .main-row .main-foto {
     width: 100%;
-    margin-bottom: 15px;
     margin-left: 0;
   }
   .main .main-row .main-foto img {
     max-height: 350px;
-  }
-  .main .two-foto-row {
-    margin-bottom: 15px;
-    margin-left: 0;
-  }
-  .main .two-foto-row .center-foto-row {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  .main .two-foto-row .right-foto-row {
-    width: 100%;
-  }
-  .main .address {
-    left: 12px;
   }
   .main .address address {
     font-size: 16px;
@@ -577,11 +486,11 @@ footer .footer-box a {
   }
   .main .row-main .first-foto {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .main .row-main .second-foto {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 0;
   }
   .main .row-main .third-foto {
     width: 100%;
@@ -627,137 +536,27 @@ footer .footer-box a {
   }
   /*---------------------*/
 }
-/*
-@media screen and (max-width: 481px){
-  */
-/*menu*/
-/*
-
-  menu {
-    .left-menu {
-      ul {
-        li {
-          width: 100%;
-          a{
-
-          }
-        }
-      }
-    }
+@media screen and (max-width: 481px) {
+  .main .address address {
+    font-size: 18px;
   }
-  */
-/*-------------------------------*/
-/*
-
-  */
-/*main*/
-/*
-
-  .main {
-    img {
-      min-height: 300px;
-    }
-    .main-row{
-      margin-left: 0;
-      .main-foto {
-        width: 100%;
-        margin-bottom: 15px;
-        img{
-          max-height: 260px;
-        }
-      }
-    }
-    .two-foto-row {
-      margin-bottom: 15px;
-      margin-left: 0;
-      .center-foto-row {
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      .right-foto-row{
-        width: 100%;
-      }
-    }
-    .address {
-      left: 12px;
-      address{
-        font-size: 16px;
-      }
-      h2 {
-        font-size: 21px;
-      }
-    }
-    .stars{
-      bottom: 15px;
-      padding-top: 15px;
-      .time{
-        margin-left: 10px;
-        font-size: 14px;
-      }
-      .rating{
-        margin: 5px 5px 0;
-        font-size: 16px;
-      }
-    }
-    .row-main{
-      .first-foto {
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      .second-foto{
-        width: 100%;
-        margin-bottom: 15px;
-      }
-      .third-foto{
-        width: 100%;
-        margin: 0 0 15px 0;
-      }
-      .four-foto{
-        width: 100%;
-      }
-    }
+  .main .address h2 {
+    font-size: 24px;
   }
-  */
-/*--------------------------*/
-/*
-
-  */
-/*-----------footer---------*/
-/*
-
-  footer{
-    border: none;
-    margin-top: 15px;
-    .footer-box{
-      .copyright{
-        display: none;
-      }
-      .instagram{
-        padding-left: 7px;
-        width: 50%;
-      }
-      .facebook{
-        padding-left: 7px;
-        width: 50%;
-      }
-      .studio{
-        padding-left: 20px;
-        width: 24%;
-        color: #664422;
-      }
-      a{
-        text-decoration: none;
-        color: #664422;
-      }
-    }
-
+  .main .stars {
+    bottom: 30px;
+    padding-top: 15px;
   }
-  */
-/*---------------------*/
-/*
-
+  .main .stars .time {
+    margin-left: 15px;
+    font-size: 14px;
+  }
+  .main .stars .rating {
+    font-size: 16px;
+    margin-right: 50px;
+  }
 }
-*/
+/*--------------------------*/
 body {
   font-family: RobotoSlabRegular !important;
 }
